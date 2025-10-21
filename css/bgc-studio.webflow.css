@@ -737,6 +737,19 @@
   display: flex;
 }
 
+.div-block-30 {
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100svh;
+  display: flex;
+}
+
+.mobile-nav-links {
+  width: 22px;
+  height: 22px;
+}
+
 @media screen and (max-width: 991px) {
   .project-grid {
     grid-column-gap: 2px;
@@ -841,6 +854,7 @@
 
   .nav-link---mobile {
     margin-bottom: 0;
+    display: flex;
   }
 
   .menu-button {
@@ -891,6 +905,20 @@
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  .mobile-nav-links {
+    background-color: #fff;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: calc(100vh - 50px);
+    padding-left: 40px;
+    padding-right: 40px;
+    display: none;
+    position: absolute;
+    inset: 100% auto 0% 0%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -939,9 +967,24 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .container-2, .div-block-11 {
+  .container-2 {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .nav-link---desktop {
+    display: none;
+  }
+
+  .div-block-11 {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: none;
   }
 
   .div-block-12, .div-block-13 {
@@ -983,6 +1026,10 @@
 
   .div-block-25 {
     grid-template-columns: 1fr;
+  }
+
+  .nav-link---mobile {
+    display: flex;
   }
 
   .paragraph-about {
@@ -1073,9 +1120,20 @@
   .textarea {
     height: 290px;
   }
+
+  .mobile-nav-links {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: none;
+  }
 }
 
-#w-node-f25612fa-bfa0-5487-328e-876bef45c5aa-cef91873, #w-node-f25612fa-bfa0-5487-328e-876bef45c5aa-3a020e05, #w-node-_991b3e38-c163-f6bc-22da-bf134f400266-3d67a520, #w-node-_991b3e38-c163-f6bc-22da-bf134f400291-3d67a520 {
+#w-node-f25612fa-bfa0-5487-328e-876bef45c5aa-3a020e05, #w-node-_991b3e38-c163-f6bc-22da-bf134f400266-3d67a520, #w-node-_991b3e38-c163-f6bc-22da-bf134f400291-3d67a520 {
   align-self: auto;
 }
 
